@@ -1,0 +1,89 @@
+footer {
+    background: darken(#0E8ACB, 24%);
+    
+    .inner-footer {
+        padding: 2.2em 1.5em;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .email-form {
+            display: inline-block;
+            padding: 1.5em 1.5em 1em;
+            background: darken(#0E8ACB, 14%);
+            border-radius: 8px;
+            margin-bottom: 1.5em;
+            h3 {
+                margin-bottom: 8px;
+            }
+            p.small {
+                margin-bottom: 0;
+                font-size: 13px;
+            }
+            form {
+                margin: 1em 0;
+            }
+            input[type="email"] {
+                max-width: 400px;
+                height: 36px;
+                margin-right: 10px;
+                border-radius: 2px;
+                border: 0;
+                padding: 0 3px;
+                font-size: 21px;
+            }
+            .form-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                p {
+                    margin-bottom: 0;
+                }
+                .blue-button {
+                    padding: 8px 12px;
+                    font-size: 1em;
+                    position: relative;
+                    top: 12px;
+                }
+            }
+        }
+        .submitted {
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 600px;
+            text-align: left;
+            h3 {
+                margin: 0;
+            }
+        }
+        .social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2.2em;
+            svg {
+                width: 24px;
+                margin-right: 8px;
+                path {
+                    fill: #fff;
+                }
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            .social-handle {
+                position: relative;
+                top: -5px;
+            }
+        }
+        .copyright {
+            margin-bottom: 0;
+        }
+    }
+}

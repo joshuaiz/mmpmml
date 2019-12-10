@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Showcase Sans';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("showcasesans.woff2") format("woff2"),
+       url("showcasesans.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Showcase Sans';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("showcasesans-italic.woff2") format("woff2"),
+  url("showcasesans-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Showcase Sans Mini';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("showcasesansmini.woff2") format("woff2"),
+       url("showcasesansmini.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Showcase Sans Mini';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("showcasesansmini-italic.woff2") format("woff2"),
+       url("showcasesansmini-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Showcase Slab';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("showcaseslab.woff2") format("woff2"),
+       url("showcaseslab.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Showcase Slab';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("showcaseslab-italic.woff2") format("woff2"),
+  url("showcaseslab-italic.woff") format("woff");
+}

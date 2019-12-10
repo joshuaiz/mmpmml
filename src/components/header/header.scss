@@ -1,0 +1,21 @@
+header {
+    position: relative;
+    .inner-header {
+        position: absolute;
+        padding: 1.5em;
+        z-index: 99;
+        top: 5%;
+        left: 2%;
+        .site-title {
+            // display: none;
+            font-family: 'Showcase Sans';
+            font-size: 1.5em;
+            letter-spacing: 0.25px;
+            margin: 0;
+            a {
+                text-decoration: none;
+                color: #0E8ACB;
+            }
+        }
+    }
+}
