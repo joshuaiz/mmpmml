@@ -50,6 +50,13 @@ module.exports = {
             }
         },
         {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+                trackingId: 'UA-154416639-1'
+            }
+        },
+        {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `Make Me Pretty, Make Me Laugh`,
