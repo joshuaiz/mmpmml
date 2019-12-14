@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
-import MenuItem from './MenuItem'
+import MenuItem from '../menu/menuitem'
 
 /**
  * Define MenuItem fragment and get all primary menu items.
@@ -40,17 +40,15 @@ const Menu = () => {
 
                     return (
                         <nav className="primary-menu">
-                        
-                                <ul className="main-menu">
-                            
-                            {menuItems &&
-                                menuItems.map(menuItem => (
-                                    <MenuItem
-                                        key={menuItem.id}
-                                        menuItem={menuItem}
-                                        wordPressUrl={wordPressUrl}
-                                    />
-                                ))}
+                            <ul className="main-menu">
+                                {menuItems &&
+                                    menuItems.map(menuItem => (
+                                        <MenuItem
+                                            key={menuItem.id}
+                                            menuItem={menuItem}
+                                            wordPressUrl={wordPressUrl}
+                                        />
+                                    ))}
                             </ul>
                         </nav>
                     )
