@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import { slugify } from '../../utils'
 
 import Header from '../header'
 import Footer from '../footer'
@@ -11,6 +12,7 @@ import '../../styles/base.scss'
 import shareImage from '../../images/mmpmml_share_image.jpg'
 
 const Layout = ({ children }) => {
+    console.log('Layout', children)
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -30,6 +32,14 @@ const Layout = ({ children }) => {
 
     // console.log('siteMetadata', data)
     const meta = data.site.siteMetadata
+
+    const slug = slugify(children[0].props.title)
+
+    let isPost
+
+    if (children[2]) {
+        isPost = children[2].props.className || null
+    }
 
     return (
         <Fragment>
@@ -59,6 +69,9 @@ const Layout = ({ children }) => {
                 <meta
                     name="twitter:image:alt"
                     content="Illustration of woman with blonde wavy hair winking"
+                />
+                <body
+                    className={`${isPost ? 'post-single' : ''} ${slug}-page`}
                 />
             </Helmet>
             <div className="container">

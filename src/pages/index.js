@@ -50,7 +50,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <SEO title="Home" />
-            <div className="home-page">
+            <div className="page-home">
                 <div className="hero-outer">
                     <div className="hero-inner">
                         <div className="hero-background">

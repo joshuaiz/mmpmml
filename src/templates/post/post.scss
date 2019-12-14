@@ -1,0 +1,34 @@
+.post-single {
+    .single-post {
+        padding: 1.5em;
+        max-width: 800px;
+        margin: 1.5em auto 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .article-header {
+            .post-title {
+                font-size: 3.3em;
+            }
+        }
+        .post-content {
+            font-size: 140%;
+            p {
+                font-family: 'Solway', 'solway', sans-serif;
+                font-weight: 200;
+            }
+        }
+        .post-content-image {
+            margin-bottom: 2.2rem;
+        }
+        .callout-quote {
+            margin: 2.2em;
+            font-size: 2.5em;
+            line-height: 1;
+            color: #0E8ACB;
+            padding-left: 12px;
+            border-left: 4px solid darken(#0E8ACB, 12%);
+        }
+    }
+}

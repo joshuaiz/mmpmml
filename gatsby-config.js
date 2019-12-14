@@ -57,6 +57,15 @@ module.exports = {
             }
         },
         {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [
+                    `solway\:300,400,700` // you can also specify font weights and styles
+                ],
+                display: 'swap'
+            }
+        },
+        {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `Make Me Pretty, Make Me Laugh`,
