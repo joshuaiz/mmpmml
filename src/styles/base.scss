@@ -13,7 +13,11 @@ img {
     height: auto;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Showcase Sans';
     color: #350921;
 }
@@ -29,7 +33,6 @@ h1 {
     padding-left: 0;
     list-style-type: none;
 }
-
 
 .page-home {
     .container {
@@ -61,11 +64,12 @@ h1 {
                     font-size: 2.2em;
                     font-weight: 500;
                     margin-bottom: 0.5rem;
-                    color: darken(#DE4096, 44%);
+                    color: darken(#de4096, 44%);
                     letter-spacing: 0.22px;
                     line-height: 0.7;
                 }
-                h3, h4 {
+                h3,
+                h4 {
                     font-family: 'Showcase Sans Mini';
                 }
                 h4 {
@@ -81,12 +85,12 @@ h1 {
                     letter-spacing: 1.5px;
                     a {
                         text-decoration: none;
-                        color: #FFD00A;
+                        color: #ffd00a;
                     }
                 }
                 p {
                     margin: 1em 0;
-                    font-weight:600;
+                    font-weight: 600;
                 }
             }
         }
@@ -95,7 +99,7 @@ h1 {
         margin: 60px 0 100px;
         h2 {
             text-align: center;
-            color: #0E8ACB;
+            color: #0e8acb;
             font-family: 'Showcase Sans Mini';
             font-size: 4em;
             font-weight: 400;
@@ -111,7 +115,7 @@ h1 {
                 padding: 0;
                 display: grid;
                 grid-gap: 36px;
-                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr) );
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
                 li {
                     padding: 12px 16px;
                     .testimonial-quote {
@@ -121,25 +125,24 @@ h1 {
                         font-weight: 500;
                         line-height: 0.77;
                         margin-bottom: 12px;
-                        color: darken(#DE4096, 34%);
-                        background: lighten(#FFD00A, 36%);
+                        color: darken(#de4096, 34%);
+                        background: lighten(#ffd00a, 36%);
                         border-radius: 6px;
                         position: relative;
                     }
                     .testimonial-quote:after {
-                            top:100%;
-                            left: 20%;
-                            border: solid transparent;
-                            content: " ";
-                            height: 0;
-                            width: 0;
-                            position: absolute;
-                            pointer-events: none;
-                            border-color: rgba(255, 208, 10, 0);
-                            border-top-color: lighten(#FFD00A, 36%);
-                            border-width: 15px;
-                            margin-left: -15px;
-                            
+                        top: 100%;
+                        left: 20%;
+                        border: solid transparent;
+                        content: ' ';
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                        border-color: rgba(255, 208, 10, 0);
+                        border-top-color: lighten(#ffd00a, 36%);
+                        border-width: 15px;
+                        margin-left: -15px;
                     }
                     .author {
                         font-family: 'Showcase Sans';
@@ -167,7 +170,7 @@ h1 {
             max-width: 1600px;
             h2 {
                 text-align: center;
-                color: #0E8ACB;
+                color: #0e8acb;
                 font-family: 'Showcase Sans Mini';
                 font-size: 4em;
                 font-weight: 400;
@@ -179,7 +182,7 @@ h1 {
                 padding: 0;
                 display: grid;
                 grid-gap: 10px;
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
                 li {
                     margin-bottom: 0;
                 }
@@ -200,6 +203,7 @@ h1 {
                 margin: 2.2em 0 3.3em;
                 .list-post {
                     display: flex;
+                    flex-wrap: wrap;
                     margin-bottom: 2.2em;
                     padding-bottom: 2.2em;
                     border-bottom: 1px dotted #dedede;
@@ -223,7 +227,8 @@ h1 {
                             margin-top: 1em;
                             a {
                                 text-decoration: none;
-                                &:hover, &:focus {
+                                &:hover,
+                                &:focus {
                                     text-decoration: underline;
                                 }
                             }
@@ -233,7 +238,53 @@ h1 {
             }
         }
     }
-    
+}
+
+@media only screen and (max-width: 599px) {
+    .blog-page {
+        main {
+            // padding: 0 1.5rem;
+            h1 {
+                margin-top: 1rem;
+            }
+        }
+        .content {
+            .inner-content {
+                padding: 0 1.5rem;
+                .post-list {
+                    .list-post {
+                        flex-wrap: wrap;
+                        h2 {
+                            line-height: 0.9;
+                            margin-bottom: 1.5rem !important;
+                        }
+                        .list-image {
+                            width: 100%;
+                            margin: 0 0 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .post-single {
+        .content {
+            .inner-content {
+                main {
+                    .post-title {
+                        margin-top: 0;
+                    }
+                }
+                .single-post {
+                    padding: 0 1.5rem;
+                    .callout-quote {
+                        margin: 1rem 0;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .cta-outer {
@@ -245,7 +296,7 @@ h1 {
 }
 
 .cta {
-    background: #0E8ACB;
+    background: #0e8acb;
     color: #fff;
     padding: 1em;
     display: inline-block;
@@ -255,8 +306,9 @@ h1 {
     border-radius: 4px;
     position: relative;
     cursor: pointer;
-    &:hover, &:focus {
-        background: darken(#0E8ACB, 4%);
+    &:hover,
+    &:focus {
+        background: darken(#0e8acb, 4%);
         top: 1px;
     }
     a {
@@ -286,7 +338,7 @@ h1 {
 }
 
 .blue-button {
-    background: #0E8ACB;
+    background: #0e8acb;
     padding: 1em 1.5em;
     border-radius: 4px;
     font-size: 1em;
@@ -315,7 +367,7 @@ h1 {
         .extra-background-inner {
             height: 220px;
             width: 100%;
-            background: #E02591;
+            background: #e02591;
             opacity: 0.5;
             position: absolute;
             top: -180px;
@@ -369,7 +421,7 @@ h1 {
         .extra-background-inner {
             height: 260px;
             width: 100%;
-            background: #E02591;
+            background: #e02591;
             opacity: 0.5;
             position: absolute;
             top: -240px;
@@ -418,7 +470,7 @@ h1 {
         .extra-background-inner {
             height: 260px;
             width: 100%;
-            background: #E02591;
+            background: #e02591;
             opacity: 0.5;
             position: absolute;
             top: -260px;
@@ -436,7 +488,7 @@ h1 {
         .extra-background-inner {
             height: 250px;
             width: 100%;
-            background: #E02591;
+            background: #e02591;
             opacity: 0.6;
             position: absolute;
             top: -250px;
@@ -489,7 +541,7 @@ h1 {
         .extra-background-inner {
             height: 260px;
             width: 100%;
-            background: #E02591;
+            background: #e02591;
             opacity: 0.5;
             position: absolute;
             top: -320px;
@@ -522,7 +574,7 @@ h1 {
             .extra-background-inner {
                 height: 360px;
                 width: 100%;
-                background: #E02591;
+                background: #e02591;
                 opacity: 0.5;
                 position: absolute;
                 top: -400px;
@@ -530,5 +582,4 @@ h1 {
             }
         }
     }
-    
 }
